@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Asavira Azzahra</title>
+    <!-- Google Font Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFEFF1;
+            color: #4B2E83;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #FF89BB;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #F55A9A;
+        }
+        nav {
+            background-color: #FEC5E5;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #4B2E83;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover {
+            background-color: #FF89BB;
+            color: white;
+        }
+        section {
+            padding: 30px;
+            background-color: #FFEFF1;
+        }
+        h2 {
+            color: #F55A9A;
+        }
+        article {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #FFD3E3;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #FEC5E5;
+            color: #4B2E83;
+            text-align: center;
+            padding: 10px;
+            border-top: 5px solid #F55A9A;
+            margin-top: 20px; /* Tambahkan jarak di atas footer */
+            position: relative; /* Mengubah dari fixed ke relative */
+        }
+        p, li {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            font-weight: 600;
+        }
+
+        /* Image Slider */
+        .slider {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            max-width: 300px; /* Sesuaikan lebar maksimal slider */
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: calc(300px * 5); /* Sesuaikan dengan jumlah gambar dalam slider */
+        }
+
+        .slides img {
+            width: 300px; /* Ukuran gambar 300x300 */
+            height: 300px;
+            object-fit: cover; /* Untuk menghindari distorsi pada gambar */
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 50%;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Profil Asavira Azzahra</h1>
+        <p>Mahasiswa Informatika di Institut Teknologi Sumatera</p>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#biodata">Biodata</a>
+        <a href="#education">Pendidikan</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#experience">Pengalaman</a>
+        <a href="#hobbies">Hobi</a>
+    </nav>
+
+    <!-- Halaman Utama (Body) -->
+    <section id="home">
+        <h2>Selamat Datang di Halaman Profil Saya!</h2>
+        <p>Halo! Nama saya Asavira Azzahra, saya mahasiswa Teknik Informatika di Institut Teknologi Sumatera (ITERA). Saya tertarik pada teknologi, pengembangan web, dan aktif dalam berbagai kegiatan kampus.</p>
+        
+        <!-- Image Slider -->
+        <div class="slider">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slides">
+                <img src="asap 1.jpg" alt="Gambar 1">
+                <img src="asap 2.png" alt="Gambar 2">
+                <img src="asap 3.jpg" alt="Gambar 3">
+                <img src="asap 4.jpg" alt="Gambar 4">
+                <img src="asap 5.jpg" alt="Gambar 5">
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+    </section>
+
+    <!-- Biodata -->
+    <section id="biodata">
+        <article>
+            <h2>Biodata Pribadi</h2>
+            <ul>
+                <li><strong>Nama:</strong> Asavira Azzahra</li>
+                <li><strong>Tempat, Tanggal Lahir:</strong> Lampung, 15 Januari 2003</li>
+                <li><strong>Alamat:</strong> Bandar Lampung, Lampung</li>
+                <li><strong>Email:</strong> asavira.azzahra@example.com</li>
+                <li><strong>No HP:</strong> 0812-3456-7890</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Pendidikan -->
+    <section id="education">
+        <article>
+            <h2>Pendidikan</h2>
+            <ul>
+                <li><strong>S1 Teknik Informatika:</strong> Institut Teknologi Sumatera (ITERA), 2021 - Sekarang</li>
+                <li><strong>SMA Negeri 1 Bandar Lampung:</strong> Jurusan IPA, 2018 - 2021</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Keahlian -->
+    <section id="skills">
+        <article>
+            <h2>Keahlian</h2>
+            <ul>
+                <li><strong>Bahasa Pemrograman:</strong> Python, JavaScript, HTML, CSS</li>
+                <li><strong>Pengembangan Web:</strong> Frontend dan Backend Development</li>
+                <li><strong>Manajemen Proyek:</strong> Project Manager dalam pengembangan web</li>
+                <li><strong>Organisasi:</strong> Kepala Divisi Eksternal Lembaga Pers Mahasiswa ITERA</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Pengalaman Organisasi -->
+    <section id="experience">
+        <article>
+            <h2>Pengalaman Organisasi</h2>
+            <ul>
+                <li><strong>Kepala Divisi Eksternal Lembaga Pers Mahasiswa ITERA:</strong> 2023 - Sekarang</li>
+                <li><strong>Panitia TALKSTERA 2024:</strong> Koordinator Time Keeper dan Sekolah Staf</li>
+                <li><strong>Project Manager Web Olahraga:</strong> Memimpin proyek pengembangan web bertema olahraga di 2024</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Hobi -->
+    <section id="hobbies">
+        <article>
+            <h2>Hobi</h2>
+            <p>Saya menyukai membaca, menulis, public speaking, dan aktif di organisasi. Saya juga suka berolahraga dan terlibat dalam kegiatan sosial kampus.</p>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Profil Asavira Azzahra - Mahasiswa Informatika, ITERA</p>
+    </footer>
+
+    <!-- Script untuk Image Slider -->
+    <script>
+        let currentSlide = 0;
+        function moveSlide(step) {
+            const slides = document.querySelector('.slides');
+            const totalSlides = slides.children.length;
+            currentSlide = (currentSlide + step + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(-${currentSlide * 300}px)`;
+        }
+    </script>
+
+</body>
+</html>

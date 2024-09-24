@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASAP's Profile</title>
+    <!-- Font Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #a47488;
+            color: #4B2E83;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #9b124b;
+            color: white;
+            padding: 1%;
+            text-align: center;
+            border-bottom: 8px solid #9f808d;
+        }
+        nav {
+            background-color: #f0c1db;
+            overflow: hidden;
+            text-align: center;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #4B2E83;
+            text-align: center;
+            padding: 10px 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0px 10px;
+        }
+        nav a:hover {
+            background-color: #FF89BB;
+            color: white;
+        }
+        section {
+            padding: 30px;
+            background-color: #FFEFF1;
+        }
+        h2 {
+            color: #a52458;
+        }
+        article {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #FFD3E3;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #9b124b;
+            color: #dad7df;
+            text-align: center;
+            padding: 10px;
+            border-top: 5px solid #F55A9A;
+            margin-top: 20px; /* Tambahkan jarak di atas footer */
+            position: relative; /* Mengubah dari fixed ke relative */
+        }
+        p, li {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            font-weight: 600;
+        }
+
+        /* Image Slider */
+        .slider {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            max-width: 300px; /* Sesuaikan lebar maksimal slider */
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: calc(300px * 5); /* Sesuaikan dengan jumlah gambar dalam slider */
+        }
+
+        .slides img {
+            width: 300px; /* Ukuran gambar 300x300 */
+            height: 300px;
+            object-fit: cover; /* Untuk menghindari distorsi pada gambar */
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 50%;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        /* Stickers */
+        .stickers {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .sticker {
+            font-size: 24px;
+        }
+
+        .footer-stickers {
+            margin-top: 10px;
+        }
+
+        .sticker-image {
+            width: 40px;
+            height: 40px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Asavira Azzahra's Profile</h1>
+        <p>Informatics Engineering Student at the Sumatra Institute of Technology</p>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#biodata">Personal Information</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills & Achievements</a>
+        <a href="#experience">Committee Experience</a>
+        <a href="#hobbies">Hobbies</a>
+    </nav>
+
+    <!-- Halaman Utama (Body) -->
+    <section id="home">
+        <h2>Welcome to my personal profile page – where stories, passion, and creativity come together!</h2>
+        <p>I’m an ambitious Informatics Engineering student at ITERA 🎓 with a passion for innovation and technology 💻. Actively involved in various committees, I’ve developed strong leadership, problem-solving, and project management skills 💡. My experience in diverse activities has sharpened my adaptability and teamwork, allowing me to make a positive impact in every project I pursue 🚀!</p>
+        
+        <!-- Image Slider -->
+        <div class="slider">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slides">
+                <img src="asap 1.jpg" alt="Image 1">
+                <img src="asap 2.png" alt="Image 2">
+                <img src="asap 3.jpg" alt="Image 3">
+                <img src="asap 4.jpg" alt="Image 4">
+                <img src="asap 5.jpg" alt="Image 5">
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            <!-- Emojis or Stickers -->
+            <div class="stickers">
+                <span class="sticker">&#128522;</span> <!-- Smiling Face -->
+                <span class="sticker">&#128519;</span> <!-- Smiling Face with Sunglasses -->
+                <span class="sticker">&#128525;</span> <!-- Heart Eyes -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Biodata -->
+    <section id="biodata">
+        <article>
+            <h2>Personal Information</h2>
+            <ul>
+                <li><strong>Full Name:</strong> Asavira Azzahra</li>
+                <li><strong>Date of Birth:</strong> Bandar Lampung, 21 December 2003</li>
+                <li><strong>Address:</strong> Panjang, Bandar Lampung, Lampung</li>
+                <li><strong>Email:</strong> asavira211203@gmail.com</li>
+                <li><strong>Phone Number:</strong> 0813-6734-2390</li>
+                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/asvrzhr_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@asvrzhr_</a></li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Pendidikan -->
+    <section id="education">
+        <article>
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Sumatra Institute of Technology (ITERA):</strong> Bachelor’s Degree in Informatics Engineering, 2022 - present</li>
+                <li><strong>SMA Negeri 5 Bandar Lampung:</strong> Science Major, 2020 - 2022</li>
+                <li><strong>SMP Negeri 4 Bandar Lampung:</strong> 2017 - 2019</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <article>
+            <h2>Skills & Achievements</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, C++, HTML, CSS</li>
+                <li><strong>Web Development:</strong> Frontend and UI/UX Design</li>
+                <li><strong>Project Management:</strong> Project Manager in web development</li>
+                <li><strong>Organization:</strong> Head of External Division at ITERA Student Press Organization and Keprofesian Staff at HMIF ITERA</li>
+                <li><strong>Ganesha Future Creator 2021:</strong> Participant of Poem GANESHA FUTURE CREATOR</li>
+                <li><strong>OSAMAKOM FISIKA 2021:</strong> Participant in Science, Mathematics, and Computer Olympiad</li>
+                <li><strong>KI HAJAR STEM (National) 2021:</strong> Participant in KIHAJAR STEM 2021 BASIC LEVEL</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Pengalaman -->
+    <section id="experience">
+        <article>
+            <h2>Committee Experience</h2>
+            <ul>
+                <li><strong>Head of External Division, ITERA Student Press Organization (LPI):</strong> August 2023 - Present</li>
+                <li><strong>Project Manager:</strong> In charge of a sports website project, August 2024 - October 2024</li>
+                <li><strong>Talkstera 2024:</strong> Committee Member for career seminar and job fair, August 2024</li>
+                <li><strong>ITERA Career Day 2024:</strong> Interviewer for the Time Keeper Sub-Division, August 2024</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Hobi -->
+    <section id="hobbies">
+        <article>
+            <h2>Hobbies</h2>
+            <p>Aside from my academic and professional pursuits, I enjoy singing and listening to music. Music provides a creative outlet and helps me relax and recharge.</p>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Asavira Azzahra Profile - Informatics Student, ITERA</p>
+        <div class="footer-stickers">
+            <img src="smile.png" alt="Smiling Sticker" class="sticker-image">
+            <img src="sunglasses.png" alt="Sunglasses Sticker" class="sticker-image">
+            <img src="heart.png" alt="Heart Sticker" class="sticker-image">
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slides img');
+            if (index >= slides.length) { slideIndex = 0; }
+            if (index < 0) { slideIndex = slides.length - 1; }
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === slideIndex) ? 'block' : 'none';
+            });
+        }
+
+        function moveSlide(step) {
+            showSlide(slideIndex += step);
+        }
+
+        showSlide(slideIndex); // Initialize with the first slide
+    </script>
+</body>
+</html>
